@@ -1,0 +1,44 @@
+{
+  "author": "Griffpatch,Tim-Fang,ForestPark",
+  "browser_action": {
+    "default_icon": "favicon.png"
+  },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "css": ["inject.css"],
+      "js": ["injectSimple.js"],
+      "matches": [
+        "https://scratch.mit.edu/projects/*",
+        "https://llk.github.io/scratch-gui/*",
+        "https://*.aerfaying.com/Projects/*",
+        "https://kada.163.com/project/v3/create.htm",
+        "https://kada.163.com/project/create/*",
+        "https://timfang.gitee.io/ose/",
+        "https://*.gitblock.cn/Projects/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Scratch 3 Developer Tools to enhance your Scratch Editing Experience",
+  "homepage_url": "https://www.griffpatch.co.uk",
+  "icons": {
+    "128": "bigIcon.png",
+    "32": "favicon.png"
+  },
+
+  "manifest_version": 2,
+  "name": "Scratch 3 Developer Tools",
+  "permissions": [
+    "https://scratch.mit.edu/projects/*",
+    "https://llk.github.io/scratch-gui/*",
+    "https://*.aerfaying.com/Projects/*",
+    "https://kada.163.com/project/v3/create.htm",
+    "https://kada.163.com/project/create/*",
+    "https://timfang.gitee.io/ose/",
+    "https://*.gitblock.cn/Projects/*"
+  ],
+  "short_name": "Scratch 3 Dev Tools",
+  "version": "0.2",
+  "web_accessible_resources": ["inject3.js"]
+}
